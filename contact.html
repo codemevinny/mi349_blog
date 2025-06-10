@@ -1,7 +1,9 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Vincent</title>
   </head>
   <body>
     <header>
@@ -15,5 +17,27 @@
         </ul>
       </nav>
   </header>
+    <form>
+      <h2>Contact me!</h2>
+
+      <label for="name">Name</label>
+      <input type="text" id="name" name="name" required>
+
+      <label for="email">Email Address</label>
+      <input type="email" id="email" name="email" required>
+
+      <label for="reason">Reason for Contact</label>
+      <select id="reason" name="reason" required>
+        <option value="">--Please choose an option--</option>
+        <option value="hi">Chat with me</option>
+        <option value="contractor">For contracting</option>
+        <option value="interview">Interview me</option>
+      </select>
+
+      <label for="message">Message</label>
+      <textarea id="message" name="message" placeholder="Type your comments here..."></textarea>
+
+      <button type="submit">Send Message</button>
+    </form>
   </body>
 </html>
